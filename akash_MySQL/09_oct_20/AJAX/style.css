@@ -1,0 +1,27 @@
+body {
+  background: #f5f4f4;
+}
+.form-control{
+  width: 20%;
+}
+.text-class {
+  color: crimson;
+  margin-left: 15px;
+}
+
+.practice-class {
+  color: teal;
+  margin-top: 40px;
+}
+
+.name-class {
+  color: white;
+}
+
+.form_class {
+  color: #3e2e2e;
+}
+
+.suggestion_class {
+  color: #291b1b;
+}

@@ -1,0 +1,16 @@
+body {
+    background: #f5f4f4;
+}
+
+.text-class {
+    color: crimson;
+    margin-left: 15px;
+}
+
+.practice-class {
+    color: teal;
+}
+
+.name-class {
+    color: white;
+}

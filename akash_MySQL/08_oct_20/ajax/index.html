@@ -1,0 +1,72 @@
+<!-- HTML start -->
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <!-- CSS link -->
+   <link rel="stylesheet" href="/index/akash_MySQL/08_oct_20/ajax/style.css">
+
+   <!-- Titel -->
+   <title>Akash Training</title>
+   <link rel="icon" href="/index/icon.JPG">
+   <!-- JavaScript -->
+   <script>
+      function showCustomer(str) {
+         var xhttp;
+         if (str == "") {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+         }
+         xhttp = new XMLHttpRequest();
+         xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+         };
+         xhttp.open("GET", "getcustomer.asp?q=" + str, true);
+         xhttp.send();
+      }
+   </script>
+</head>
+
+<body>
+   <!-- NavBar -->
+   <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand">
+         <h4>Hello SM - Tech Family</h4>
+      </a>
+      <form class="form-inline">
+         <h5 class="name-class">@AKJ</h5>
+      </form>
+   </nav>
+   <!-- Div created for giving some sytles  -->
+   <div class="text-class">
+      <!-- Code 1 -->
+      <h4 class="practice-class"> # WAP to show a user types a character in the input field show hints by ASP. </h4>
+
+      <h5 class="mt-4 ml-4">Start typing a name in the input field below:</h>
+         <br><br>
+         <form>
+            First name: <input type="text" onkeyup="showHint(this.value)">
+         </form>
+         <p>Suggestions: <span id="txtHint"></span></p>
+   </div>
+   <form action="">
+      <select name="customers" onchange="showCustomer(this.value)">
+         <option value="">Select a customer:</option>
+         <option value="ALFKI">Alfreds Futterkiste</option>
+         <option value="NORTS ">North/South</option>
+         <option value="WOLZA">Wolski Zajazd</option>
+      </select>
+   </form>
+   <br>
+   <div id="txtHint">Customer info will be listed here...</div>
+
+
+
+</body>
+
+</html>

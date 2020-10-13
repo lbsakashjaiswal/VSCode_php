@@ -1,0 +1,1 @@
+PHP :- PHP code is usually processed on a web server by a PHP interpreter implemented as a module executed PHP code.

@@ -1,0 +1,65 @@
+body {
+  background: #f5f4f4;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 25%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+th {
+  color: #212529;
+}
+
+td {
+  color: #212529;
+}
+
+.text-class {
+  color: crimson;
+  margin-left: 15px;
+}
+
+.practice-class {
+  color: teal;
+}
+
+.name-class {
+  color: white;
+}
+
+.custom-file-label {
+  width: 20%;
+}
+
+.input-group-append {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.button {
+  border-radius: unset;
+}
+
+.custom-file {
+  margin-left: 15px;
+}
+
+.uploadData {
+  color: green;
+  margin-left: 20px;
+  margin-top: 13px;
+  font-size: 1.1rem;
+}
